@@ -8,4 +8,11 @@ class Example extends Controller {
     require APP . 'view/example/args.php';
   }
 
+  public function vars() {
+    
+    $vars = get_defined_vars();
+    $consts = get_defined_constants();
+    require APP . 'view/example/vars.php';
+  }
+
 }
